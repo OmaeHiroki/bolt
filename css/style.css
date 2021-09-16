@@ -38,6 +38,10 @@ body {
   font-size: 30px;
 }
 
+.flame,.humberger {
+  display: none;
+}
+
 .header.is-button {
   background-color: #74cfae;
   box-sizing: border-box;
@@ -119,6 +123,7 @@ img {
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
+  margin-top: 40px;
 }
 .h2-middle.is-picture {
   margin-left: 100px;
@@ -134,10 +139,6 @@ img {
 }
 .h2-middle.is-picture:first-child {
   margin-left: 0;
-}
-
-.h2-middle.picture__box {
-  margin-top: 40px;
 }
 
 .h2-middle.textbox {
@@ -186,7 +187,6 @@ img {
 .h2-footer.deta__box {
   font-size: 16px;
   margin-left: 180px;
-  margin-top: 70px;
 }
 .h2-footer.deta__box:first-child {
   margin-left: 0;
@@ -319,6 +319,49 @@ img {
     width: 97%;
   }
 
+  .header.is-button {
+    display: none;
+  }
+
+  .flame,.humberger {
+    display: block;
+  }
+
+  .humberger {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .humberger span,
+  .humberger span::before,
+  .humberger span::after {
+    content: "";
+    display: block;
+    background:  #bbb;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+  }
+
+  .humberger span::before {
+    top: 6px;
+  }
+
+  .humberger span::after {
+    bottom: 6px;
+  }
+  
+  .flame {
+    border-radius: 4px;
+    border: 1px solid #bbb;
+  }
+  
+
+
   .wrapper__contents.h1 {
     padding: 0;
   }
@@ -387,7 +430,7 @@ img {
     padding: 50px 15px;
   }
   .icon {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     text-decoration: none;
   }

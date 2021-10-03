@@ -56,6 +56,14 @@ main {
   padding-top: 60px;
 }
 
+a {
+  display: block;
+}
+
+.is-title {
+  font-size: 24px;
+}
+
 .wrapper__contents.h1 {
   background-color: #f2f2f2;
   padding-top: 250px;
@@ -95,10 +103,6 @@ main {
   width: 700px;
 }
 
-.h2-header.is-title {
-  font-size: 24px;
-}
-
 .h2-header.is-text {
   font-size: 20px;
   margin-top: 35px;
@@ -112,7 +116,6 @@ main {
 
 .h2-middle.is-title {
   color: #222;
-  font-size: 24px;
 }
 
 img {
@@ -246,7 +249,7 @@ img {
   background-color: #fff;
 }
 
-@media screen and (min-width:768px) and (max-width:1199px) {
+@media screen and (max-width:1199px) {
   .inner__contents {
     width: 97%;
   }
@@ -271,9 +274,8 @@ img {
   }
 
   .h2-middle.is-picture {
-    margin: 0;
+    margin: 0 auto;
   }
-  
   .is-picture:nth-child(4n) {
     margin-top: 80px;
   }
@@ -312,9 +314,6 @@ img {
 }
 
 @media screen and (max-width:767px) {
-  .inner__contents {
-    width: 97%;
-  }
 
   .header.is-button {
     display: none;
@@ -365,20 +364,9 @@ img {
   .h2-header.picturebox.picture {
     max-width: 208px;
   }
-  
-  .h2-header.textbox {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .h2-header.is-title {
-    margin-top: 20px;
-  }
-  .h2-middle.picture__box {
-    display: block;
-  }
+
   .h2-middle.is-picture {
     max-width: 300px;
-    margin: 0 auto;
   }
   .h2-middle.is-picture img {
     width: 100%;
@@ -386,36 +374,12 @@ img {
   .h2-middle.is-picture:nth-child(3n+1) {
     margin-left: auto;
   }
-  .h2-middle.is-picture:nth-child(4n) {
-    margin-top: 80px;
-  }
-  .h2-middle.textbox {
-    display: block;
-    margin-top: 80px;
-  }
   .h2-middle.is-text {
-    margin: 0 auto;
     width: 72%;
   }
-  .is-button {
-    display: inline-block;
-    margin-top: 40px;
-  }
   
-  .h2-footer.deta {
-    display: block;
-  }
   .h2-footer.deta__box img {
     max-width: 122px;
-  }
-  .h2-footer.deta__box {
-    margin: 0;
-  }
-  .h2-footer.deta__box:first-child {
-    margin-top: 0px;
-  }
-  .h2-footer.deta__box {
-    margin-top: 88px;
   }
 
   .inner__contents.nav {
